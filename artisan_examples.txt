@@ -1,0 +1,23 @@
+
+
+
+php artisan make:migration --table="users" create_users_collection
+php artisan make:migration --table="roles" create_users_roles_collection
+
+php artisan make:migration --table="task" create_task_collection
+php artisan make:migration --table="social_logins" create_social_logins_collection
+php artisan make:migration --table="role_user" create_role_user_collection
+php artisan make:migration --table="profiles" create_profiles_collection
+php artisan make:migration --table="password_resets" create_password_resets_collection
+
+
+php artisan make:seeder UsersRolesSeeder
+
+
+db.role_user.insert(
+{
+	"user_id" : "588a6761f2bffc0aa1097522",
+	"role_id" : "588a506df2bffc08ed5e3af4",
+	"updated_at" : ISODate("2017-01-26T21:17:21.608Z"),
+	"created_at" : ISODate("2017-01-26T21:17:21.608Z")
+})
